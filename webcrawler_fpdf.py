@@ -161,8 +161,11 @@ for i in cnbc_headlines_div:
         cnbc_article_soup = BeautifulSoup(cnbc_article_f.content, 'lxml')
 
         #Get the author of the article
-        cnbc_article_author_list = cnbc_article_soup.find('a', {'class':'Author-authorName'})
-        cnbc_article_author = cnbc_article_author_list.text
+        try:
+            cnbc_article_author_list = cnbc_article_soup.find('a', {'class':'Author-authorName'})
+            cnbc_article_author = cnbc_article_author_list.text
+        except AttributeError:
+            cnbc_article_author = 'Unknown'
 
         #Get the summary of the news article
         try:
