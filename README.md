@@ -1,4 +1,4 @@
-<img src="https://github.com/HJH-08/webcrawler-pdf/blob/main/%E2%9C%89_Webcrawler.png" width='1200' height = '300'>
+<img src="https://github.com/HJH-08/webcrawler-pdf/blob/main/%E2%9C%89_Webcrawler.png" width='1200' height = '200'>
 
 <br>
 <p align="center">
@@ -9,7 +9,7 @@
 
 <p align="center">
   <a href="#tech-news">About</a> •
-  <a href="#prerequisities">Prerequisites</a> •
+  <a href="#prerequisites">Prerequisites</a> •
   <a href="#how-to-run-the-script">Instructions</a> •
   <a href="#potential-errors">Potential Errors</a>
   
@@ -17,7 +17,7 @@
 
 # Tech News
 
-## Brought to you by a webcrawler, finding the latesttech news
+## Brought to you by a webcrawler, finding the latest tech news
 
 This project is written in `Python`. The webcrawler
 * Goes through the tech news websites of the **CNBC**, **BBC** and **NYT** (in that order)
@@ -26,7 +26,6 @@ This project is written in `Python`. The webcrawler
 * Consolidates the information neatly and presents it in a pdf called `tech_news.pdf`
 
 <br>
-___
 
      
 ## Prerequisites
@@ -52,15 +51,14 @@ $ pip install requests
 
 To install `bs4`: 
 ```
-$ pip install requests
+$ pip install beautifulsoup4 
 ```
 
-To import the `DejaVu fonts`:
-Check [here](https://www.fontsquirrel.com/fonts/dejavu-sans), and click **download ttf** to download the zip file containing the DejaVu font family. Move the folder to the **same** directory from which this code is run, and unzip the contents. This folder should be similar to the `fonts` folder found in this repository.
+To import the `DejaVu fonts`: <br>
+Click [here](https://www.fontsquirrel.com/fonts/dejavu-sans), and click **download ttf** to download the zip file containing the DejaVu font family. Move the folder to the **same** directory from which this code is run, and unzip the contents. This folder should be similar to the `fonts` folder found in this repository.
 <br>
 
 ## How to run the script
-<br>
 
 Run this code:
 ``` bash
@@ -78,8 +76,9 @@ The pdf is consolidated!
 ```
 
 There will be a `pdf` file named `tech_news.pdf` that is downloaded onto the same directory from which this code has been run. Open it to view the tech news.
+<br>
 
 ## Potential Errors
-<br>
+
 The code works as of when it is last edited. However, the webcrawler uses html classes and ids from the news websites to find information. The functionality of the code is subject to change from the third party news websites. Thus if the code does not work as intended, there's a good chance that I'm already editing the code. ㋡ Thanks for understanding!
 
